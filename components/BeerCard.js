@@ -8,7 +8,7 @@ const BeerCard = ({item}) => {
         <Link href={`beers/${item.id}`}>
             <a className={"card" + " " + styles.beerCard}>
                 <div className={styles.cardBlockImage}>
-                    <Image src={item.image_url} className={styles.cardBlockImage__image} alt={`Beer named ${item.name}`}/>
+                    <img src={item.image_url} className={styles.cardBlockImage__image} alt={`Beer named ${item.name}`}/>
                 </div>
                 <div className="">
                     <h3 className={"card-title" + ' ' + styles.cardBlockText__title}>{item.name}</h3>

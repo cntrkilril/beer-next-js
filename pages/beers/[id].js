@@ -33,7 +33,7 @@ function User() {
                         </Link>
                         <div className="card">
                             <div className={styles.BeersIdBlock}>
-                                <Image className={styles.BeersIdBlock__img} src={beer.image_url}/>
+                                <img className={styles.BeersIdBlock__img} src={beer.image_url}/>
                                 <div className={styles.BeersIdBlockHeadingBlockTextBlock}>
                                     <h2 className={styles.BeersIdBlockHeadingBlockTextBlock__title}>{beer.name}</h2>
                                     <p className={styles.BeersIdBlockHeadingBlockTextBlock__tagline}>{beer.tagline}</p>
@@ -56,15 +56,5 @@ function User() {
         </div>
     );
 };
-
-// export async function getServerSideProps({params}) {
-//     const response = await fetch(`https://api.punkapi.com/v2/beers/${params.id}`)
-//     const beer = (await response.json())[0]
-//     return {
-//         props: {
-//             beer
-//         }
-//     }
-// }
 
 export default User;
