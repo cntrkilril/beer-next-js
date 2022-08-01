@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from "../styles/BeerCard.module.scss"
 import Link from "next/link";
-import Image from "next/image";
 
-const BeerCard = ({item}) => {
+const BeerCard = ({item, deleteScroll}) => {
+
     return (
         <Link href={`beers/${item.id}`}>
-            <a className={"card" + " " + styles.beerCard}>
+            <a onClick={deleteScroll} className={"card" + " " + styles.beerCard}>
                 <div className={styles.cardBlockImage}>
                     <img src={item.image_url} className={styles.cardBlockImage__image} alt={`Beer named ${item.name}`}/>
                 </div>

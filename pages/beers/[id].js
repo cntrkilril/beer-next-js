@@ -1,14 +1,16 @@
-import React, {useEffect, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import styles from "../../styles/BeersId.module.scss"
 import Link from "next/link";
-import Image from "next/image";
 import {useRouter} from "next/router";
+import {BeersContext} from "../_app";
 
 function User() {
 
     const [beer, setBeer] = useState({})
     const [fetching, setFetching] = useState(false)
     const {query} = useRouter()
+
+    const context = useContext(BeersContext)
 
     useEffect(() => {
         fetchingBeer()
@@ -20,6 +22,10 @@ function User() {
         setFetching(true)
     }
 
+    const defaultBeer = async () => {
+        await context.clearBeers()
+    }
+
     return (
         <div className={styles.BeerId}>
             {
@@ -29,7 +35,8 @@ function User() {
                     :
                     <>
                         <Link href='/'>
-                            <a className={"btn btn-outline-secondary " + styles.BeerId__link}>Back</a>
+                            <a onClick={defaultBeer}
+                               className={"btn btn-outline-secondary " + styles.BeerId__link}>Back</a>
                         </Link>
                         <div className="card">
                             <div className={styles.BeersIdBlock}>
