@@ -1,0 +1,16 @@
+.header {
+  background-color: burlywood;
+  width: 100%;
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.headingBlock {
+  display: flex;
+  flex-direction: row;
+  &__text {
+    color: darkred;
+  }
+}

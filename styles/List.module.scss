@@ -1,0 +1,12 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 3rem;
+}
+
+.mainBlock {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

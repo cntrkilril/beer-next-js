@@ -1,0 +1,35 @@
+.beerCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 1rem;
+  width: 30%;
+  background-color: white;
+  min-width: 20rem;
+  max-width: 50rem;
+  margin-top: 2rem;
+  &:hover {
+    color: darkred;
+  }
+}
+
+.cardBlockImage {
+  background-color: white;
+  padding: 1rem 0rem;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  &__image {
+    justify-self: center;
+    width: 4rem;
+  }
+}
+
+.cardBlockText {
+  &__title {
+    text-align: center;
+  }
+  &__text {
+    font-size: 1.2rem;
+  }
+}

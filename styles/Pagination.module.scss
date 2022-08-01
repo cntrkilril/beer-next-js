@@ -1,0 +1,16 @@
+.paginationBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  color: darkred;
+  &__text {
+    font-size: 2rem;
+    margin: 0;
+  }
+  &__symbol {
+    margin-top: -1rem;
+    font-size: 3rem;
+  }
+}

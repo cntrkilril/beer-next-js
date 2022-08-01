@@ -1,0 +1,45 @@
+.BeerId {
+  margin: 3rem 3rem;
+  &__link {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem 3rem;
+  }
+}
+
+.BeersIdBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  &__img {
+    height: 20rem;
+    margin: 1rem 10rem;
+  }
+}
+
+.BeersIdBlockHeadingBlockTextBlock {
+  &__title {
+    font-size: 3rem;
+  }
+  &__tagline {
+    font-size: 2rem;
+    color: gray;
+  }
+  &__abv {
+    color: gray;
+    font-size: 1.5rem;
+  }
+  &__text {
+    font-size: 1.5rem;
+  }
+  &__titleList {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+
+.ListFoodPairing {
+  &__item {
+    font-size: 1.5rem;
+  }
+}
