@@ -5,7 +5,8 @@ const nextConfig = {
     loader: 'akamai',
     path: ''
   },
-  assetPrefix: './'
+  assetPrefix: '/beer-next-js',
+  basePath: '/beer-next-js'
 }
 
 module.exports = nextConfig
